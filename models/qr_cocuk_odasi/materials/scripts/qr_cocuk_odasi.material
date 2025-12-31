@@ -1,0 +1,14 @@
+material QR_Çocuk_Odası/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture NURSERY.png
+        scale 1 1
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+material QR_Yatak_Odası/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture BEDROOM.png
+        scale 1 1
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+material QR_Salon/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture LIVINGROOM.png
+        scale 1 1
+      }
+    }
+  }
+}

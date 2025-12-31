@@ -1,0 +1,2 @@
+material QR_Mutfak/Diffuse { technique { pass { texture_unit { texture KITCHIN.png
+scale 1 1 } } } }

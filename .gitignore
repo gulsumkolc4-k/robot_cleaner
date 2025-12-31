@@ -1,0 +1,9 @@
+build/
+devel/
+install/
+logs/
+*.bag
+*.swp
+*.pyc
+.vscode/
+.idea/

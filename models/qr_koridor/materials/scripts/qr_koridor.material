@@ -1,0 +1,14 @@
+material QR_Koridor/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture CORRIDOR.png
+        scale 1 1
+      }
+    }
+  }
+}

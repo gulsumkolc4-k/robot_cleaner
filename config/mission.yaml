@@ -1,0 +1,67 @@
+rooms:
+  - LIVINGROOM
+  - KITCHEN
+  - BEDROOM
+  - CORRIDOR
+  - NURSERY
+
+waypoints:
+
+  LIVINGROOM:
+    entry_goal: {x: 6.26, y: 0.16, yaw: 0.06}
+    qr_expected: "ROOM=LIVINGROOM"
+    cleaning_goals:
+
+      - {x: 3.23, y: 2.96, yaw: 1.39}
+
+      - {x: 4.80, y: 3.13, yaw: 2.85}
+
+      - {x: 6.69, y: 2.63, yaw: -0.12}
+
+
+  KITCHEN:
+    entry_goal: {x: -6.13, y: -2.99, yaw: -1.43}
+    qr_expected: "ROOM=KITCHEN"
+    cleaning_goals:
+
+      - {x: -6.70, y: -3.09, yaw: 2.19}
+
+      - {x: -6.21, y: -1.20, yaw: 1.42}
+
+      - {x: -6.23, y: 0.94, yaw: -1.74}
+
+
+  BEDROOM:
+    entry_goal: {x: -5.87, y: 4.14, yaw: 2.5}
+    qr_expected: "ROOM=BEDROOM"
+    cleaning_goals:
+
+      - {x: -6.79, y: 2.98, yaw: -1.19}
+
+      - {x: -6.19, y: 1.86, yaw: 2.33}
+
+      - {x: -5.37, y: 2.96, yaw: -0.34}
+
+
+  CORRIDOR:
+    entry_goal: {x: -1.07, y: 1.29, yaw: 0.1}
+    qr_expected: "ROOM=CORRIDOR"
+    cleaning_goals:
+
+      - {x: -3.72, y: 3.62, yaw: 0.40}
+
+      - {x: -1.51, y: 4.10, yaw: -0.74}
+
+      - {x: -0.76, y: 2.59, yaw: -1.81}
+
+  
+  NURSERY:
+    entry_goal: {x: 6.40, y: -4.84, yaw: -0.18}
+    qr_expected: "ROOM=NURSERY"
+    cleaning_goals:
+
+      - {x: 5.77, y: -1.13, yaw: -2.40}
+
+      - {x: 7.06, y: -1.54, yaw: -1.33}
+
+      - {x: 5.79, y: -4.64, yaw: 3.12}
