@@ -71,25 +71,44 @@ python3-opencv
 
 ## Çalıştırma sırası
 **Ortam Değişkeni**
+açılan her terminale eklenmelidir.
+```
 source ~/catkin_ws/devel/setup.bash
 export TURTLEBOT3_MODEL=waffle
+```
 
 #2.SLAM (Haritalama) ve Gazebo Ortamını açmak için
+
+```
 roslaunch robot_cleaner slam_map.launch
+```
 
 **Robotu klavye ile gezdirmek için**
+
+```
 roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
+```
+
 **Kamerayı görmek için**
+
+```
 rqt_image_view
 
+```
+
 #3.Harita Kaydetme
+
+```
 rosrun map_server map_saver -f $(rospack find robot_cleaner)/maps/map
 
+```
 #5.Görev Yöneticisi (Temizlik Başlatma)
-roslaunch robot_cleaner task_manager.launch \
-mission:=$(rospack find robot_cleaner)/config/mission.yaml
 
+```
+roslaunch robot_cleaner task_manager.launch
+
+```
 
 ## NOTLAR
 
@@ -101,8 +120,11 @@ Temizlik waypoint’leri
 Beklenen QR içeriği
 
 **RViz’de robot konumunu doğrudan x, y, yaw olarak almak için**
+
+```
 python3 ~/catkin_ws/src/robot_cleaner/src/get_pose.py
 
+```
 **Temizlik Raporu**
 robot_cleaner/reports/clean_report.txt
 
